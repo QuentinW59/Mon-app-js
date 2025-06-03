@@ -37,6 +37,7 @@ export default function App(){
         <InputTemperature 
           onChangeText={setInputValue}
           defaultValue={DEFAULT_TEMPERATURE}
+          unit = {currentUnit}
         />
         <ButtonConvert 
         onPress={() => {setCurrentUnit(oppositeUnit);
